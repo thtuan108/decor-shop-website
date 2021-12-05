@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="./assets/js/bootstrap.js" ></script>
+  <script src="./assets/js/style.js"></script>
+  <title>Giới thiệu</title>
+</head>
+<body class="wrapper">
+  <header>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-sm bg-dark-color navbar-dark fixed-top hide-sm">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="pre-logo">MYDECOR</span><span class="post-logo">SHOP</span></a>
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link ml-4" href="index.html"><h5 class="font-weight-bold mb-0">Trang chủ</h5></a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ml-4" href="#" id="navbardrop" data-toggle="dropdown">
+                      <h5 class="font-weight-bold figure mb-0">Sản phẩm</h5>
+                  </a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí nhà</a>
+                      <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí tường</a>
+                      <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí tủ, kệ</a>
+                      <a class="dropdown-item hover-main-color active-main-color" href="products.html">Đồ gia dụng & bếp</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item hover-main-color active-main-color" href="products.html">Xem tất cả</a>
+                  </div>
+              </li>
+              <!-- End dropdown -->
+              <li class="nav-item active">
+                  <a class="nav-link ml-4" href="about.html"><h5 class="font-weight-bold mb-0">Giới thiệu</h5></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link ml-4" href="contact.html"><h5 class="font-weight-bold mb-0">Liên hệ</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-4" href="#" onclick="document.getElementById('modal-id').style.display='block'"><h5 class="mb-0">Đăng nhập <i class="fas fa-sign-in-alt signin-btn"></i></h5></a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+    <!-- Navbar for tablet and phone -->
+    <nav class="navbar bg-dark-color navbar-dark fixed-top navbar-sm">
+      <a class="navbar-brand" href="index.html"><span class="pre-logo">MYDECOR</span><span class="post-logo">SHOP</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Sản phẩm</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">Giới thiệu</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.getElementById('modal-id').style.display='block'">Đăng nhập</a>
+          </li>
+        </ul>
+      </div>  
+    </nav>
+    <!-- / Navbar for tablet and phone -->
+  </header>
+
+       <div class="main">
+         <!-- Main content -->
+         <div class="main-content pt-5">
+
+             <!-- Jumbotron starts -->
+             <div class="jumbotron jumbotron-fluid jumbotron-about-img modal-layer">
+                <div class="container">
+                    <h1 class="display-3 text-white rise-up">
+                        Giới thiệu <b class="main-color">MYDECOR SHOP</b><br>và các sản phẩm trang trí nhà đẹp
+                    </h1>
+                </div>
+             </div>
+             <!-- Jumbotron ends -->
+
+           <div class="container">
+
+              <!-- About info title -->
+              <div class="row mt-5 pt-5">
+                <p class="col-md-8 content-title">Giới thiệu <span class="main-color">MyDecor Shop</span></p>
+                <div class="col-md-4 text-right content-title-more">
+                  <a href="index.html" class="content-title-link">Về trang chủ <i class="far fa-arrow-alt-circle-right"></i></a>
+                 </div>
+               </div>
+               <div class="page-divider"></div>
+
+               <!-- About products -->
+               <div class="row mt-5 mb-5">
+                <div class="col-md-6">
+                    <img src="./assets/img/canh-dao-dong.jpg" class="about-img" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="main-color">Thổi hồn vào không gian sống của bạn</h4>
+                    <p class="text-justify">Ngôi nhà là nơi thể hiện đẳng cấp cũng như cá tính của chủ nhà. Do đó lối sống yêu thích, lối trang trí thiết kế khẳng định sự khác biệt trong suy nghĩ của mỗi người. Không ai là không muốn biến nhà của mình thành ngôi nhà đẹp nhất, đáng yêu nhất không chỉ trong mắt mình mà còn trong mắt của người thân, bạn bè. Khi đời sống ngày càng tốt, nhu cầu về tinh thần ngày càng cao. Ngày xưa ngôi nhà chỉ là nơi trú ẩn đối với phần lớn mọi người. Nhưng giờ đây, nhà không chỉ đơn thuần là nơi để bạn đi đi về về.</p>
+                    <p class="text-justify">Vì vậy, đôi khi chỉ cần đến với những ngôi nhà nhỏ, nhưng ngập tràn các đồ trang trí nhà, đồ decor đẹp bạn sẽ cảm thấy rất đỗi ấn tượng. Đôi khi là vài bình hoa, đôi khi là đồng hồ treo tường sang trọng, hoặc là bức decal dán tường đẹp cũng làm không gian sống sẽ trở nên thoải mái hơn rất nhiều.</p>
+                    <a href="products.html" class="content-title-link p-0 text-right">Xem các sản phẩm <i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="page-divider"></div>
+            <!-- About shop -->
+            <div class="row mt-5 mb-5">
+                <div class="col-md-6">
+                    <h4 class="main-color">Sứ mệnh của chúng tôi</h4>
+                    <p class="text-justify"><b class="main-color">MyDecor Shop</b> hoạt động với tiêu chí mong muốn tất cả các khách hàng của mình đều có thể tự tay mua đồ decor và trang trí lại tổ ấm ngôi nhà mình mà không mất quá nhiều chi phí. Giúp cho ngôi nhà của quý khách trở nên khang trang và lung linh nhất. Là nơi mỗi khi đi làm về chúng ta có thể tận hưởng không gian sống và cảm thấy thoải mái. Là nơi mỗi khi tụ tập bạn bè hay đón tiếp những vị khách quý tới bạn có thể cảm thấy tự hào.</p>
+                    <p class="text-justify">Thay vì bạn phải bỏ cả 4 triệu để mua một chiếc đồng hồ tại các đại lý nhìn cực lung linh sang chảnh thì bạn chỉ cần bỏ ra một phần nhỏ của số đó để có được một mẫu đồng hồ thật tinh tế qua sự lựa chọn ku4 càng của chúng tôi. Và số tiền còn lại kia bạn có thể mua thêm rất nhiều đồ trang trí nhà lung linh khác.</p>
+                    <a href="contact.html" class="content-title-link p-0 text-left">Liên hệ với MyDecor Shop <i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/img/chu-love.jpg" class="about-img" alt="">
+                </div>
+            </div>
+               
+            <div class="page-divider"></div>
+
+              <!-- About info -->
+              <h4 class="main-color mt-5">Và hơn thế nữa là những điều không thể bỏ qua tại MyDecor Shop:</h4>
+              <div class="row mt-5 mb-5">
+                <div class="col-md-4 text-content-item">
+                  <h3 class="text-center"><b>ĐA DẠNG SẢN PHẨM</b></h3>
+                  <p class="text-justify">Với sự đa dạng đồ decor tại <b class="main-color">MyDecor Shop</b>, các sản phẩm trang trí nhà đẹp sẽ giúp ngôi nhà bạn như biết nói. Thể hiện đẳng cấp và style thẩm mỹ của bạn. Để bạn có thể tự hào với tất cả mọi người về tài trang trí nhà tuyệt đẹp của mình.</p>
+                </div>
+                <div class="col-md-4 text-content-item">
+                  <h3 class="text-center"><b>THANH TOÁN DỄ DÀNG</b></h3>
+                  <p class="text-justify"><b class="main-color">MyDecor Shop</b> có nhiều phương thức thanh toán để thuận tiện cho khách hàng như: nhận hàng thanh toán hoặc chuyển khoản. Chỉ cần tập trung trang trí nhà. Nhiệm vụ còn lại để chúng tôi lo.</p>
+                </div>
+                <div class="col-md-4 text-content-item">
+                  <h3 class="text-center"><b>TIẾT KIỆM THỜI GIAN</b></h3>
+                  <p class="text-justify">Không cần chạy xe trong nắng nóng bụi bặm. <b class="main-color">MyDecor Shop</b> có chế độ giao nhà tận nơi cho bạn. Nếu sản phẩm không giống hình bạn được quyền đổi trả trong 3 ngày.</p>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="footer">
+                  <div class="page-divider"></div>
+                  <div class="copyright-footer pt-5 pb-5 text-center">
+                    COPYRIGHT &copy; 2021 <span class="main-color">MYDECOR SHOP</span> CO., LTD - DESIGN: <a href="#" class="main-color contact-email">THTUAN108@GMAIL.COM</a>
+                  </div>
+              </div>
+           </div>
+         </div>
+       </div>
+        <!-- Log in modal -->
+        <div id="modal-id" class="login-modal">
+          <div class="login-form">
+            <div class="login-close-btn" onclick="document.getElementById('modal-id').style.display='none'"><i class="fas fa-times"></i></div>
+        
+            <ul class="login-tab-group">
+              <li class="login-tab" onclick="openTab(event, 'login')" id="defaultOpen"><a href="#login">Đăng nhập</a></li>
+              <li class="login-tab" onclick="openTab(event, 'signup')"><a href="#signup">Đăng ký</a></li>
+            </ul>
+            
+            <div id="signup" class="login-tab-content">
+                  <h1>Đăng ký thành viên</h1>
+                  
+                  <form action="index.html" method="post">
+                  
+                  <div class="top-row">
+                    <div class="field-wrap">
+                      <label>
+                        Họ<span class="req">*</span>
+                      </label>
+                      <input type="text" required autocomplete="off" />
+                    </div>
+                
+                    <div class="field-wrap">
+                      <label>
+                        Tên<span class="req">*</span>
+                      </label>
+                      <input type="text"required autocomplete="off"/>
+                    </div>
+                  </div>
+        
+                  <div class="field-wrap">
+                    <label>
+                      Email <span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <label>
+                      Mật khẩu <span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+                  
+                  <button type="submit" class="button button-block">Đăng ký</button>
+                  
+                  </form>
+    
+            </div>
+            
+            <div id="login" class="login-tab-content">
+                  <h1>Chào mừng quay lại với <b class="main-color">MyDecor Shop</b></h1>
+                  
+                  <form action="index.html" method="post">
+                  
+                    <div class="field-wrap">
+                    <label>
+                      Email <span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <label>
+                      Mật khẩu <span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+                  
+                  <p class="forgot"><a class="main-color" href="#">Quên mật khẩu?</a></p>
+                  
+                  <button class="button button-block">Đăng nhập</button>
+                  
+                  </form>
+    
+            </div>          
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('modal-id');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+
+            $('.login-form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+              var $this = $(this),
+                  label = $this.prev('label');
+
+                if (e.type === 'keyup') {
+                  if ($this.val() === '') {
+                      label.removeClass('active highlight');
+                    } else {
+                      label.addClass('active highlight');
+                    }
+                } else if (e.type === 'blur') {
+                  if( $this.val() === '' ) {
+                    label.removeClass('active highlight'); 
+                  } else {
+                    label.removeClass('highlight');   
+                  }   
+                } else if (e.type === 'focus') {
+                  
+                  if( $this.val() === '' ) {
+                    label.removeClass('highlight'); 
+                  } 
+                  else if( $this.val() !== '' ) {
+                    label.addClass('highlight');
+                  }
+                }
+            });
+        </script>
+</body>
+</html>

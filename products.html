@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="./assets/js/bootstrap.js" ></script>
+  <script src="./assets/js/style.js"></script>
+  <title>Sản phẩm</title>
+</head>
+<body class="wrapper">
+    <header>
+        <!-- Navbar starts -->
+        <nav class="navbar navbar-expand-sm bg-dark-color navbar-dark fixed-top hide-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="pre-logo">MYDECOR</span><span class="post-logo">SHOP</span></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="index.html"><h5 class="font-weight-bold mb-0">Trang chủ</h5></a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle ml-4" href="#" id="navbardrop" data-toggle="dropdown">
+                            <h5 class="font-weight-bold figure mb-0">Sản phẩm</h5>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí nhà</a>
+                            <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí tường</a>
+                            <a class="dropdown-item hover-main-color active-main-color" href="products.html">Trang trí tủ, kệ</a>
+                            <a class="dropdown-item hover-main-color active-main-color" href="products.html">Đồ gia dụng & bếp</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item hover-main-color active-main-color" href="products.html">Xem tất cả</a>
+                        </div>
+                    </li>
+                    <!-- End dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="about.html"><h5 class="font-weight-bold mb-0">Giới thiệu</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="contact.html"><h5 class="font-weight-bold mb-0">Liên hệ</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link ml-4" href="#" onclick="document.getElementById('modal-id').style.display='block'"><h5 class="mb-0">Đăng nhập <i class="fas fa-sign-in-alt signin-btn"></i></h5></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar ends -->
+        <!-- Navbar for tablet and phone -->
+    <nav class="navbar bg-dark-color navbar-dark fixed-top navbar-sm">
+      <a class="navbar-brand" href="index.html"><span class="pre-logo">MYDECOR</span><span class="post-logo">SHOP</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="products.html">Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Giới thiệu</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.getElementById('modal-id').style.display='block'">Đăng nhập</a>
+          </li>
+        </ul>
+      </div>  
+    </nav>
+    <!-- / Navbar for tablet and phone -->
+    </header>
+
+        <!-- Main -->
+       <div class="main">
+         <!-- Main content -->
+         <div class="main-content mt-5">
+             <!-- Jumbotron starts -->
+             <div class="jumbotron jumbotron-fluid jumbotron-product-img modal-layer">
+                <div class="container">
+                    <h1 class="display-3 text-white rise-up">
+                        Chào mừng quý khách đến với<br>gian hàng của <b class="main-color">MYDECOR SHOP</b>
+                    </h1>
+                </div>
+             </div>
+             <!-- Jumbotron ends -->
+
+           <div class="container">
+             <!-- Products list title -->
+             <h5 class="mt-5">Hãy cùng khám phá bộ sưu tập của <b class="main-color">MyDecor Shop</b>.</h5>
+              <p class="text-justify mb-5">Chúng tôi cung cấp tất cả các mặt hàng quà tặng tân gia và đồ trang trí nhà với mong muốn cung cấp cho quý khách những sản phẩm và dịch vụ tốt nhất theo tiêu chí: “Your House – Your Style”. Chúc quý khách có những trải nghiệm tuyệt vời và lựa chọn được những mặt hàng ưng ý nhất từ bộ sưu tập của <b class="main-color">MyDecor Shop</b>.</p>
+             <div class="row">
+               <p class="col-md-8 content-title">Tất cả sản phẩm</p>
+               <div class="col-md-4 text-right">
+                 <a href="index.html" class="content-title-link">Về trang chủ <i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+              </div>
+              <div class="page-divider"></div>
+
+              <!-- Product list starts -->
+              <!-- Product row starts -->
+              <div class="row">
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/chan-sach-gom-su.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Đồ kê sách bằng gốm</div>
+                      <div class="col-md-12 product-price">850,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                        <div class="col-md-6 product-review main-color text-right"><b>Review (30)</b></div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Product item -->
+                  <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                    <a href="product-detail.html" class="product-item">
+                      <img src="./assets/img/qua-dia-cau'.jpg" alt="" class="product-img">
+                      <div class="row mt-2">
+                        <div class="col-md-12 product-title">Mô hình quả địa cầu</div>
+                        <div class="col-md-12 product-price">950,000đ</div>
+                      </div>
+                      <p class="product-describe">Tình trạng: Còn hàng</p>
+                      <div class="row">
+                        <div class="col-md-6 product-stars main-color">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>                    
+                        </div>
+                        <div class="col-md-6 product-review main-color text-right"><b>Review (25)</b></div>
+                      </div>
+                    </a>
+                  </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/cap-chim-bo-cau.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Cặp chim bồ câu gốm</div>
+                      <div class="col-md-12 product-price">800,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Hết hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (40)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/hoa-bat-tu.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Hoa bất tử vintage</div>
+                      <div class="col-md-12 product-price">1,500,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (60)</b></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Product row ends -->
+              <!-- Product row starts -->
+              <div class="row">
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/meo-va-chuot.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Tượng mèo và chuột</div>
+                      <div class="col-md-12 product-price">750,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (37)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/hoa-bat-tu.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Hoa bất tử vintage</div>
+                      <div class="col-md-12 product-price">1,500,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (60)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/dong-ho-ban-do.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Đồng hồ hình bản đồ</div>
+                      <div class="col-md-12 product-price">1,450,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (48)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/qua-dia-cau'.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Mô hình quả địa cầu</div>
+                      <div class="col-md-12 product-price">950,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (25)</b></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Product row ends -->
+              <!-- Product row starts -->
+              <div class="row">
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/chan-sach-gom-su.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Đồ kê sách bằng gốm</div>
+                      <div class="col-md-12 product-price">850,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                        <div class="col-md-6 product-review main-color text-right"><b>Review (30)</b></div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Product item -->
+                  <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                    <a href="product-detail.html" class="product-item">
+                      <img src="./assets/img/qua-dia-cau'.jpg" alt="" class="product-img">
+                      <div class="row mt-2">
+                        <div class="col-md-12 product-title">Mô hình quả địa cầu</div>
+                        <div class="col-md-12 product-price">950,000đ</div>
+                      </div>
+                      <p class="product-describe">Tình trạng: Còn hàng</p>
+                      <div class="row">
+                        <div class="col-md-6 product-stars main-color">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>                    
+                        </div>
+                        <div class="col-md-6 product-review main-color text-right"><b>Review (25)</b></div>
+                      </div>
+                    </a>
+                  </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/cap-chim-bo-cau.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Cặp chim bồ câu gốm</div>
+                      <div class="col-md-12 product-price">800,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Hết hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (40)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/hoa-bat-tu.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Hoa bất tử vintage</div>
+                      <div class="col-md-12 product-price">1,500,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (60)</b></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Product row ends -->
+              <!-- Product row starts -->
+              <div class="row">
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/meo-va-chuot.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Tượng mèo và chuột</div>
+                      <div class="col-md-12 product-price">750,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (37)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/hoa-bat-tu.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Hoa bất tử vintage</div>
+                      <div class="col-md-12 product-price">1,500,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (60)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/dong-ho-ban-do.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Đồng hồ hình bản đồ</div>
+                      <div class="col-md-12 product-price">1,450,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (48)</b></div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Product item -->
+                <div class="col-lg-3 col-md-6 col-mobile-6 mt-3 mb-3">
+                  <a href="product-detail.html" class="product-item">
+                    <img src="./assets/img/qua-dia-cau'.jpg" alt="" class="product-img">
+                    <div class="row mt-2">
+                      <div class="col-md-12 product-title">Mô hình quả địa cầu</div>
+                      <div class="col-md-12 product-price">950,000đ</div>
+                    </div>
+                    <p class="product-describe">Tình trạng: Còn hàng</p>
+                    <div class="row">
+                      <div class="col-md-6 product-stars main-color">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>                    
+                      </div>
+                      <div class="col-md-6 product-review main-color text-right"><b>Review (25)</b></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Product row ends -->
+              <!-- Product list ends -->
+
+              <!-- Pagination starts -->
+              <ul class="pagination justify-content-center mt-5 mb-5">
+                <li class="page-item"><a class="page-link main-color" href="products.html"><i class="fas fa-backward"></i></i></a></li>
+                <li class="page-item"><a class="page-link main-color" href="products.html">1</a></li>
+                <li class="page-item active"><a class="page-link main-color" href="products.html">2</a></li>
+                <li class="page-item"><a class="page-link main-color" href="products.html">3</a></li>
+                <li class="page-item"><a class="page-link main-color" href="products.html">4</a></li>
+                <li class="page-item"><a class="page-link main-color" href="products.html"><i class="fas fa-forward"></i></a></li>
+              </ul>
+              <!-- Pagination ends -->
+
+              <!-- Footer -->
+              <div class="footer">
+                  <div class="page-divider"></div>
+                  <div class="copyright-footer pt-5 pb-5 text-center">
+                    COPYRIGHT &copy; 2021 <span class="main-color">MYDECOR SHOP</span> CO., LTD - DESIGN: <a href="#" class="main-color contact-email">THTUAN108@GMAIL.COM</a>
+                  </div>
+              </div>
+           </div>
+         </div>
+       </div>
+        <!-- Log in modal -->
+        <div id="modal-id" class="login-modal">
+          <div class="login-form">
+            <div class="login-close-btn" onclick="document.getElementById('modal-id').style.display='none'"><i class="fas fa-times"></i></div>
+        
+            <ul class="login-tab-group">
+              <li class="login-tab" onclick="openTab(event, 'login')" id="defaultOpen"><a href="#login">Đăng nhập</a></li>
+              <li class="login-tab" onclick="openTab(event, 'signup')"><a href="#signup">Đăng ký</a></li>
+            </ul>
+            
+            <div id="signup" class="login-tab-content">
+                  <h1>Đăng ký thành viên</h1>
+                  
+                  <form action="index.html" method="post">
+                  
+                  <div class="top-row">
+                    <div class="field-wrap">
+                      <label>
+                        Họ<span class="req">*</span>
+                      </label>
+                      <input type="text" required autocomplete="off" />
+                    </div>
+                
+                    <div class="field-wrap">
+                      <label>
+                        Tên<span class="req">*</span>
+                      </label>
+                      <input type="text"required autocomplete="off"/>
+                    </div>
+                  </div>
+        
+                  <div class="field-wrap">
+                    <label>
+                      Email <span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <label>
+                      Mật khẩu <span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+                  
+                  <button type="submit" class="button button-block">Đăng ký</button>
+                  
+                  </form>
+    
+            </div>
+            
+            <div id="login" class="login-tab-content">
+                  <h1>Chào mừng quay lại với <b class="main-color">MyDecor Shop</b></h1>
+                  
+                  <form action="index.html" method="post">
+                  
+                    <div class="field-wrap">
+                    <label>
+                      Email <span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <label>
+                      Mật khẩu <span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                  </div>
+                  
+                  <p class="forgot"><a class="main-color" href="#">Quên mật khẩu?</a></p>
+                  
+                  <button class="button button-block">Đăng nhập</button>
+                  
+                  </form>
+    
+            </div>          
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('modal-id');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+
+            $('.login-form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+                var $this = $(this),
+                    label = $this.prev('label');
+
+                  if (e.type === 'keyup') {
+                    if ($this.val() === '') {
+                        label.removeClass('active highlight');
+                      } else {
+                        label.addClass('active highlight');
+                      }
+                  } else if (e.type === 'blur') {
+                    if( $this.val() === '' ) {
+                      label.removeClass('active highlight'); 
+                    } else {
+                      label.removeClass('highlight');   
+                    }   
+                  } else if (e.type === 'focus') {
+                    
+                    if( $this.val() === '' ) {
+                      label.removeClass('highlight'); 
+                    } 
+                    else if( $this.val() !== '' ) {
+                      label.addClass('highlight');
+                    }
+                  }
+              });
+        </script>
+</body>
+</html>

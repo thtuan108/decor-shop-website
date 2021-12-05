@@ -1,0 +1,620 @@
+/* Reset CSS */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Common properties */
+:root {
+	--main-dark-color: rgb(35,35,35);
+	--main-color: rgb(242, 71, 64);
+	--main-blue-color: rgb(26, 103, 147);
+}
+
+.bg-dark-color {
+	background-color: var(--main-dark-color);
+}
+
+.bg-main-color {
+	background-color: var(--main-color);
+}
+
+.border-main-color {
+	border-color: var(--main-color);
+}
+
+.dark-color {
+	color: var(--main-dark-color);
+}
+
+.rise-up {
+    position: absolute;
+}
+
+.main-color {
+	color: var(--main-color);
+}
+
+.medium-font {
+	font-size: 18px;
+	font-weight: 450;
+}
+
+.big-font {
+	font-size: 28px;
+	font-weight: 450;
+}
+
+.hover-main-color:hover {
+	background-color: rgba(242, 71, 64, 0.1);
+}
+
+.active-main-color:active {
+	background-color: var(--main-color);
+}
+
+.page-divider {
+	height: 0;
+	border-top: solid 2px #ddd;
+}
+
+.navbar-sm {
+	display: none;
+}
+
+.wrapper {
+	background-image: url("/assets/img/house-decor-clipart.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Logo */
+.pre-logo {
+	font-size: 25px;
+	font-weight: bolder;
+	margin-right: 10px;
+}
+
+.post-logo {
+	font-size: 25px;
+	font-weight: bolder;
+	color: var(--main-color);
+}
+
+/* Navigation bar */
+.signin-btn {
+	margin-left: 2px;
+	font-size: 16px;
+}
+
+/* Carousel */
+.carousel-item-img {
+    height: 548px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-layer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-main-color {
+	background-color: var(--main-dark-color);
+	border-color: var(--main-dark-color);
+}
+
+.btn-main-color:hover {
+	background-color: var(--main-color);
+	border-color: var(--main-color);
+}
+
+/* Body of page */
+.main-content {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Content partitions */
+.content-title {
+	font-size: 28px;
+	font-weight: 450;
+}
+
+.content-title-link {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--main-color);
+	display: block;
+	padding-top: 10px;
+	text-decoration: none !important;
+}
+
+/* Product */
+.product-item {
+	border: solid 1px #ccc;
+	padding: 8px;
+	display: block;
+}
+
+.product-item:hover {
+	text-decoration: none !important;
+	opacity: 0.8;
+}
+
+.product-img {
+	width: 100%;
+}
+
+.product-title {
+	color:  var(--main-blue-color);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.product-price {
+	color: var(--main-dark-color);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.product-describe {
+	color: var(--main-dark-color);
+}
+
+.product-stars,
+.product-review {
+	font-size: 12px;
+}
+
+/* About shop */
+.text-content-item {
+	line-height: 1.8;
+	color: var(--main-dark-color);
+	font-weight: 450;
+}
+
+.text-content-item + .text-content-item {
+	border-left: solid 2px rgba(35, 35, 35, 0.5);
+}
+
+.home-description {
+	border: solid 1px var(--main-color);
+	background-color: rgba(209, 143, 19, 0.1);
+	line-height: 1.8;
+	color: var(--main-dark-color);
+	font-size: 1.25rem;
+	margin-bottom: 80px;
+}
+
+/* Footer */
+.footer {
+	opacity: 0.7;
+}
+
+.footer:hover {
+	opacity: 1;
+}
+
+.contact-email:hover {
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+/* Jumbotron */
+.jumbotron-product-img {
+	position: relative;
+    background: url("../img/shopping-cart.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 360px;
+}
+
+.jumbotron-product-detail-img {
+	position: relative;
+    background: url("../img/chan-sach-gom-su-jumbotron.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 360px;
+}
+
+.jumbotron-about-img {
+	position: relative;
+    background: url("../img/shop-decor.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 360px;
+}
+
+.jumbotron-contact-img {
+	position: relative;
+    background: url("../img/phone-vintage.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 360px;
+}
+
+/* Page switcher */
+.page-item.active .page-link {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.page-link:hover {
+	color: var(--main-blue-color);
+}
+
+/* About */
+.about-img {
+	width: 100%;
+	height: 360px;
+}
+
+/* Contact */
+.contact-icon {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact-link {
+	color: var(--main-color);
+}
+
+.contact-link:hover {
+	color: var(--main-blue-color);
+	text-decoration: none;
+}
+
+/* Product detail */
+.products-detail-btns {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cart-btn,
+.buy-btn {
+	width: 45%;
+}
+
+/* Sign in / Sign up modal CSS */
+
+/* The Modal (background) */
+.login-modal {
+	display: none; 
+	position: fixed;
+	z-index: 2000; /* bring to front of the nav-bar */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 60px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.login-form {
+	position: relative;
+	background: var(--main-dark-color);
+	padding: 40px;
+	max-width:600px;
+	height: 600px;
+	margin:40px auto;
+	border-radius: 8px;
+	box-shadow:0 4px 10px 4px rgba(35, 35, 35 ,0.3);
+}
+
+.login-tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+
+.login-tab-group li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba(160, 179, 176, 0.25);
+    color: rgb(160, 179, 176);
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align:center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.login-tab-group li a:hover {
+	background-color: rgba(242, 71, 64, 0.3);
+	color: #fff;
+}
+
+.login-tab-group li.active a {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+.login-tab-content {
+	display: none;
+}
+
+.login-form h1 {
+	margin-top: 100px;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.login-form label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition:all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+}
+
+.login-form label>.req {
+	margin:2px;
+	color: var(--main-color);
+}
+
+.login-form label.active {
+	transform: translateY(50px);
+	left: 2px;
+	font-size: 14px;
+}
+
+.login-form label.active>.req {
+    opacity:0;
+}
+
+.login-form label.highlight {
+	color: #fff;
+}
+
+.login-form input, 
+.login-form textarea {
+	font-size:22px;
+	display:block;
+	width:100%;
+	height:100%;
+	padding:5px 10px;
+	background:none;
+	background-image:none;
+	border:1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-radius:0;
+	transition:border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-form input:focus, 
+.login-form textarea:focus {
+	outline:0;
+	border-color: var(--main-color);
+}
+
+.login-form textarea {
+	border:2px solid #ddd;
+	resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row>div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+}
+
+.top-row > div:last-child { 
+	margin: 0;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.login-form .button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:10px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  background:var(--main-color);
+  color:#fff;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+
+.login-form .button:hover, 
+.login-form .button:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.login-close-btn {
+	color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 8px;
+	right: 14px;
+	font-size: 20px;
+}
+
+.login-close-btn:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+/* Responsive */
+
+/* For both tablet and mobile */
+@media (max-width: 1023px) {
+	.hide-sm {
+		display: none;
+	}
+	.navbar-sm {
+		display: flex;
+		width: 100%;
+	}
+	.pre-logo,
+	.post-logo {
+		font-size: 20px;
+	}
+
+	.cart-btn {
+		width: 60%;
+	}
+
+	.buy-btn {
+		width: 30%;
+	}
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+	.carousel-item-img {
+		height: 360px;
+	}
+
+	.modal-layer h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 739px) {
+	/* Common properties */
+	.hide-xs {
+		display: none;
+	}
+	
+	.text-right-sm {
+		text-align: right !important;
+	}
+	
+	.col-mobile-6 {
+		width: 50%;
+		padding: 10px;
+		margin: 0 !important;
+	}
+	/* /common properties */
+
+	.carousel-item-img {
+		height: 224px;
+	}
+
+	/* Modal */
+	.modal-layer h1 {
+		font-size: 20px;
+		font-weight: 450;
+		margin-left: 10px;
+	}
+	
+	.modal-layer p {
+		font-size: 12px;
+	}
+
+	.modal-layer a {
+		padding: 0.25rem 0.5rem;
+		font-size: 0.875rem;
+		line-height: 1.5;
+		border-radius: 0.2rem;
+	}
+	/* /modal */
+
+	/* Page content patitions */
+	.content-title {
+		font-size: 18px;
+		font-weight: 700;
+		width: 66.6666667%;
+	}
+	
+	.content-title-more {
+		width: 33.3333333%;
+	}
+
+	.content-title-link {
+		font-size: 12px;
+		font-weight: 600;
+		color: var(--main-color);
+		display: block;
+		padding-top: 5px;
+		text-decoration: none !important;
+	}
+
+	.text-content-item + .text-content-item {
+		border: none;
+	}
+	/* /page content patitions */
+
+	.jumbotron-product-img,
+	.jumbotron-product-detail-img, 
+	.jumbotron-about-img, 
+	.jumbotron-contact-img {
+		height: 200px;
+		margin-bottom: -40px;
+	}
+
+	.product-review {
+		text-align: left !important;
+	}
+
+	.cart-btn,
+	.buy-btn {
+		padding: 10px;
+	}
+
+	/* Login form */
+	.login-form {
+		width: 85%;
+		height: 480px;
+	}
+
+	.login-form h1 {
+		font-size: 24px;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+
+	.login-form .button {
+		padding: 8px;
+		font-size: 20px;
+	}
+
+	.login-tab-group li a {
+		padding: 10px 4px;
+	}
+
+	.login-form input, 
+	.login-form textarea {
+		margin: 0;
+	}
+	/* /login form */
+}
